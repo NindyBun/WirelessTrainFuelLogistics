@@ -1,0 +1,12 @@
+{
+	"name": "WirelessTrainFuelLogistics",
+	"version": "1.0.0",
+	"title": "Wireless Train Fuel Logistics",
+	"author": "NindyBun",
+	"homepage":"",
+	"description": "Globally distribute train fuels and collect any burnt results.",
+	"factorio_version": "1.1",
+	"dependencies": [
+		"base >= 1.0"
+	]
+}
