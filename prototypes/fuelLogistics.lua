@@ -11,7 +11,7 @@ data:extend({
         icons  = {
             {
                 icon = "__base__/graphics/icons/radar.png",
-                tint = {r=0, g=1, b=0, a=1},
+                tint = {r=153, g=51, b=255},
                 icon_mipmaps = 4,
                 icon_size = 64,
             },
@@ -22,12 +22,32 @@ data:extend({
         stack_size = 50
     },
     {
+        type = "recipe",
+        name = "wireless-train-fuel-provider",
+        enabled = false,
+        icons  = {
+            {
+                icon = "__base__/graphics/icons/radar.png",
+                tint = {r=153, g=51, b=255},
+                icon_mipmaps = 4,
+                icon_size = 64,
+            },
+        },
+        energy_required = 2.5,
+        ingredients = {
+            {"radar", 1},
+            {"processing-unit", 5},
+            {"logistic-chest-active-provider", 1}
+        },
+        result = "wireless-train-fuel-provider"
+    },
+    {
         type = "electric-energy-interface",
         name = "wireless-train-fuel-provider-energy-interface",
         icons  = {
             {
                 icon = "__base__/graphics/icons/radar.png",
-                tint = {r=0, g=1, b=0, a=1},
+                tint = {r=153, g=51, b=255},
                 icon_mipmaps = 4,
                 icon_size = 64,
             },
@@ -77,7 +97,7 @@ data:extend({
             layers = {
                 {
                     filename = "__base__/graphics/entity/radar/radar.png",
-                    tint = {r=0, g=1, b=0, a=1},
+                    tint = {r=153, g=51, b=255},
                     height = 128,
                     width = 98,
                     shift = {0.03125, -0.5},
@@ -100,7 +120,7 @@ data:extend({
         icons  = {
             {
                 icon = "__base__/graphics/icons/radar.png",
-                tint = {r=0, g=1, b=0, a=1},
+                tint = {r=153, g=51, b=255},
                 icon_mipmaps = 4,
                 icon_size = 64,
             },
@@ -112,7 +132,7 @@ data:extend({
         icons  = {
             {
                 icon = "__base__/graphics/icons/radar.png",
-                tint = {r=1, g=0, b=0, a=1},
+                tint = {r=255, g=255, b=0},
                 icon_mipmaps = 4,
                 icon_size = 64,
             },
@@ -123,12 +143,32 @@ data:extend({
         stack_size = 50
     },
     {
+        type = "recipe",
+        name = "wireless-train-fuel-collector",
+        enabled = false,
+        icons  = {
+            {
+                icon = "__base__/graphics/icons/radar.png",
+                tint = {r=255, g=255, b=0},
+                icon_mipmaps = 4,
+                icon_size = 64,
+            },
+        },
+        energy_required = 2.5,
+        ingredients = {
+            {"radar", 1},
+            {"processing-unit", 5},
+            {"logistic-chest-storage", 1}
+        },
+        result = "wireless-train-fuel-collector"
+    },
+    {
         type = "electric-energy-interface",
         name = "wireless-train-fuel-collector-energy-interface",
         icons  = {
             {
                 icon = "__base__/graphics/icons/radar.png",
-                tint = {r=1, g=0, b=0, a=1},
+                tint = {r=255, g=255, b=0},
                 icon_mipmaps = 4,
                 icon_size = 64,
             },
@@ -178,7 +218,7 @@ data:extend({
             layers = {
                 {
                     filename = "__base__/graphics/entity/radar/radar.png",
-                    tint = {r=1, g=0, b=0, a=1},
+                    tint = {r=255, g=255, b=0},
                     height = 128,
                     width = 98,
                     shift = {0.03125, -0.5},
@@ -201,7 +241,7 @@ data:extend({
         icons  = {
             {
                 icon = "__base__/graphics/icons/radar.png",
-                tint = {r=1, g=0, b=0, a=1},
+                tint = {r=255, g=255, b=0},
                 icon_mipmaps = 4,
                 icon_size = 64,
             },

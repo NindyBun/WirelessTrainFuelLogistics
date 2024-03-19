@@ -1,5 +1,3 @@
-require("utils.functions")
-
 --When the mod is added in a save
 function onInit(event)
     local freeplay = remote.interfaces["freeplay"]
